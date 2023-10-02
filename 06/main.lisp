@@ -10,7 +10,7 @@
         (princ "Nice to meet you, ")
         (princ name)))
 
-(defun game-repl ()
+(defu game-repl ()
     (let ((cmd (game-read)))
         (unless (eq (car cmd) 'quit)
             (game-print (game-eval cmd))
